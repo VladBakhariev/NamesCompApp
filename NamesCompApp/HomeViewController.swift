@@ -5,4 +5,13 @@
 //  Created by user on 21.04.2023.
 //
 
-import Foundation
+import UIKit
+
+class HomeViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .link
+    }
+}

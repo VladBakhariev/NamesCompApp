@@ -18,11 +18,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
-        view.backgroundColor = .link
     }
    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         imageView.center = view.center
+        animate()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
+            self.animate()
+        })
+    }
+    
+    private func animate() {
+        UIView.animate(withDuration: 1, animations: {
+            let size = self.view.frame.size.width * 1.5
+            let diffX = size - self.view.frame.size.width
+            let diffY = self.view.frame.size.height - size
+            
+            self.imageView.frame = CGRect(
+                x: -(diffX/2),
+                y: -(diffY/2),
+                width: size,
+                height: size
+            )
+        })
+        
     }
 }
