@@ -25,6 +25,11 @@ class FirstViewController: UIViewController {
         view.addSubview(imageView)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        imageView.center = view.center
+    }
+    
     @IBAction func resultButtonTapped() {
         guard let firstName = yourNameTF.text, let secondName = partnerNameTF.text else { return }
         if firstName.isEmpty || secondName.isEmpty {
