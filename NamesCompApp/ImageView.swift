@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     private func animate() {
         UIView.animate(withDuration: 1, animations: {
-            let size = self.view.frame.size.width * 1.5
+            let size = self.view.frame.size.width * 3
             let diffX = size - self.view.frame.size.width
             let diffY = self.view.frame.size.height - size
             
@@ -44,5 +44,20 @@ class ViewController: UIViewController {
             )
         })
         
+        UIView.animate(withDuration: 1.5, animations: {
+            self.imageView.alpha = 0
+        }, completion: { done in
+            if done {
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {
+                    let viewController = HomeViewController()
+                    viewController.modalTransitionStyle = .crossDissolve
+                    viewController.modalPresentationStyle = .fullScreen
+                    self.present(viewController,animated: true)
+                
+                })
+            }
+        })
+
+      
     }
 }
