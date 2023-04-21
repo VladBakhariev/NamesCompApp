@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1934C829F2EFCB00E17905 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1934C729F2EFCB00E17905 /* ImageView.swift */; };
 		CE89C5D129B20A3C0003164F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89C5D029B20A3C0003164F /* ResultViewController.swift */; };
 		CEBDD23929B133B7002F8DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDD23829B133B7002F8DAA /* AppDelegate.swift */; };
 		CEBDD23B29B133B7002F8DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDD23A29B133B7002F8DAA /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1934C729F2EFCB00E17905 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		CE89C5D029B20A3C0003164F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		CEBDD23529B133B7002F8DAA /* NamesCompApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamesCompApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBDD23829B133B7002F8DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				CEBDD23829B133B7002F8DAA /* AppDelegate.swift */,
 				CEBDD23A29B133B7002F8DAA /* SceneDelegate.swift */,
 				CEBDD23C29B133B7002F8DAA /* FirstViewController.swift */,
+				CE1934C729F2EFCB00E17905 /* ImageView.swift */,
 				CE89C5D029B20A3C0003164F /* ResultViewController.swift */,
 				CEBDD23E29B133B7002F8DAA /* Main.storyboard */,
 				CEBDD24129B133BA002F8DAA /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1934C829F2EFCB00E17905 /* ImageView.swift in Sources */,
 				CEBDD23D29B133B7002F8DAA /* FirstViewController.swift in Sources */,
 				CEBDD23929B133B7002F8DAA /* AppDelegate.swift in Sources */,
 				CEBDD23B29B133B7002F8DAA /* SceneDelegate.swift in Sources */,
