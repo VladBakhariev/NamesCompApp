@@ -8,6 +8,12 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    private let imageView: UIImageView = {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+        imageView.image = UIImage(named: "logo")
+        return imageView
+    }()
 
     @IBOutlet weak var yourNameTF: UITextField!
     @IBOutlet weak var partnerNameTF: UITextField!
@@ -16,6 +22,7 @@ class FirstViewController: UIViewController {
         guard let destinationVC = segue.destination as? ResultViewController else { return }
         destinationVC.firstName = yourNameTF.text
         destinationVC.secondName = partnerNameTF.text
+        view.addSubview(imageView)
     }
     
     @IBAction func resultButtonTapped() {
